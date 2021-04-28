@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+    <ApplicationIcon />
+    <Win32Resource />
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>\bin\Debug\netcoreapp2.2\Filed.PaymentGateway.API.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Filed.PaymentGateway.Blanket\Filed.PaymentGateway.Blanket.csproj" />
+    <ProjectReference Include="..\Filed.PaymentGateway.Contracts\Filed.PaymentGateway.Contracts.csproj" />
+    <ProjectReference Include="..\Filed.PaymentGateway.DataAccess\Filed.PaymentGateway.DataAccess.csproj" />
+  </ItemGroup>
+
+</Project>
